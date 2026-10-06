@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Atención Ciudadana</title>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Formulario de Atención Ciudadana - Ciudad Juárez</h1>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html"><strong>&larr; Volver a Inicio</strong></a> | 
+        <a href="#">Servicios</a> | 
+        <a href="#">Contacto</a>
+    </nav>
+
+    <hr>
+
+    <!-- CUERPO CON EL FORMULARIO -->
+    <main>
+        <h2>Envía tus comentarios o reporte ciudadano</h2>
+        <p>Por favor llena los siguientes datos para contactar a la administración municipal de Ciudad Juárez[cite: 3].</p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+
+            <p>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono de contacto:</label><br>
+                <input type="tel" id="telefono" name="telefono">
+            </p>
+
+            <p>
+                <label for="asunto">Tipo de reporte o trámite:</label><br>
+                <select id="asunto" name="asunto">
+                    <option value="reporte">Reporte de servicios públicos (alumbrado, bacheo)</option>
+                    <option value="sugerencia">Sugerencia o comentario</option>
+                    <option value="informacion">Solicitud de información turística</option>
+                    <option value="otro">Otro asunto</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="mensaje">Mensaje o descripción del reporte:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar Reporte">
+                <input type="reset" value="Limpiar Formulario">
+            </p>
+        </form>
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Torres Hernandez Armando 0901 5°J</p>
+    </footer>
+
+</body>
+</html>
